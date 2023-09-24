@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@900&family=Skranji&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  height: 10vh;
+  background-color:#00618e;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Skranji', cursive;
+  padding: 1rem;
+  text-align: center;
+  font-size: 5rem;
+  /* color: #555; */
+  color: #000000;
+  text-shadow: 2px 2px 4px #ffffff;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  margin-top: 3.5rem;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1rem;
+}
+
+.square {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(103, 184, 255);
+  border-radius: 20px;
+  font-size: 9rem;
+  font-weight:bold;
+  color: #0000008e;
+  cursor: pointer;
+}
+
+.x-square, .o-square {
+  cursor: not-allowed;
+}
+
+.x-square {
+  background-color: rgb(255, 239, 179);
+  color: rgb(50, 159, 255);
+}
+
+.o-square {
+  background-color: rgb(197, 193, 177);
+  color: rgb(50, 159, 255);
+}
+
+.game {
+  padding-left: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-info {
+  margin-top: 6rem;
+  margin-left: 2em;
+  font-size: 2rem;
+}
+
+.game-info h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-size: 2.3rem;
+}
+
+.status {
+  margin: 0 auto;
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  background-color: rgb(73, 160, 150);
+  width: 23.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+li {
+  list-style:none;
+  font-size: 4rem;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(49, 104, 97);
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+
